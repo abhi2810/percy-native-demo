@@ -7,7 +7,7 @@ const opts = {
     path: '/wd/hub',
     capabilities: {
         "os_version": "10.0",
-        "device": "OnePlus 8",
+        "device": "Samsung Galaxy S20",
         "app": "PercyAndroid",
         "build": "Percy Build",
         "name": "Percy Session",
