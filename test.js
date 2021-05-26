@@ -28,18 +28,23 @@ async function main() {
         });
     });
     const browser = await wdio.remote(opts);
-    await browser.pause(5000);
+    await browser.pause(2000);
     var context = await browser.getContexts();
     await browser.switchContext(context[1]);
     await browser.url('http://bs-local.com:5162/assets/index.html');
+    await browser.pause(2000);
     await browser.saveScreenshot('./images/dashboard.png');
     await browser.url('http://bs-local.com:5162/assets/login.html');
+    await browser.pause(2000);
     await browser.saveScreenshot('./images/login.png');
     await browser.url('http://bs-local.com:5162/assets/signup.html');
+    await browser.pause(2000);
     await browser.saveScreenshot('./images/signup.png');
     await browser.url('http://bs-local.com:5162/assets/404_error.html');
+    await browser.pause(2000);
     await browser.saveScreenshot('./images/404_error.png');
     await browser.url('http://bs-local.com:5162/assets/500_error.html');
+    await browser.pause(2000);
     await browser.saveScreenshot('./images/500_error.png');
     await browser.deleteSession();
     await new Promise((resolve, reject) => {
