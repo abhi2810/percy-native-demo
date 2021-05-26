@@ -30,9 +30,8 @@ async function main() {
     const browser = await wdio.remote(opts);
     await browser.pause(5000);
     var context = await browser.getContexts();
-    console.log(context);
     await browser.switchContext(context[1]);
-    console.log(await browser.getUrl());
+    await browser.url('http://bs-local.com:5162/assets/index.html');
     await browser.saveScreenshot('./images/dashboard.png');
     await browser.url('http://bs-local.com:5162/assets/login.html');
     await browser.saveScreenshot('./images/login.png');
