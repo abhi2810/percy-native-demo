@@ -7,7 +7,7 @@ const opts = {
     path: '/wd/hub',
     capabilities: {
         "os_version": "8.0",
-        "device": "Samsung Galaxy S9 Plus",
+        "device": "Samsung Galaxy S9",
         "app": "PercyAndroid",
         "build": "Percy Build",
         "name": "Percy Session",
