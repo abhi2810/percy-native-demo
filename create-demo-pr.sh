@@ -65,7 +65,7 @@ npx percy upload ./images
 curl \
   -u $GITHUB_USER:$GITHUB_TOKEN \
   -d '{"state": "success", "target_url": "https://example.com/build/status", "description": "Tests passed", "context": "ci/service"}' \
-  "https://api.github.com/repos/BrowserStackCE/percy-demo/statuses/$(git rev-parse --verify HEAD)"
+  "https://api.github.com/repos/abhi2810/percy-native-demo/statuses/$(git rev-parse --verify HEAD)"
 
 git checkout master
 git branch -D $BASE_BRANCH
