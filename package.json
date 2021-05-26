@@ -1,0 +1,18 @@
+{
+  "name": "percy-native-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserstack-local": "^1.4.8",
+    "webdriverio": "^7.6.0"
+  },
+  "devDependencies": {
+    "@percy/cli": "*"
+  }
+}
