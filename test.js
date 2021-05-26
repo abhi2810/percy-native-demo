@@ -6,8 +6,8 @@ const opts = {
     hostname: 'hub-cloud.browserstack.com',
     path: '/wd/hub',
     capabilities: {
-        "os_version": "8.0",
-        "device": "Samsung Galaxy S9",
+        "os_version": "10.0",
+        "device": "OnePlus 8",
         "app": "PercyAndroid",
         "build": "Percy Build",
         "name": "Percy Session",
