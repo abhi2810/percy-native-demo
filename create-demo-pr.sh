@@ -50,10 +50,10 @@ git checkout update-button-base
 git checkout -b $BRANCH
 git commit --amend -m 'Change Sign Up button style.'
 git push origin $BRANCH
-PR_NUM=$(hub pull-request -b $BASE_BRANCH -m 'Change Sign Up button style.' | grep -oE '[0-9]+')
+PR_NUM=$(hub pull-request -b $BASE_BRANCH -m 'Change Sign Up button style.' | grep -oE '/[0-9]+')
 
 export PERCY_BRANCH=$BRANCH
-export PERCY_PULL_REQUEST=$PR_NUM
+export PERCY_PULL_REQUEST=${PR_NUM:1}
 
 npx http-server -p 5162 &
 
